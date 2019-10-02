@@ -1,16 +1,48 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+body {
+    font-family: 'Open Sans';
+}
 
 .site {
-    &__title { 
+    &__title {
         font-size: 56px;
         font-weight: bold;
         text-align: center;
         color: #fff;
-          text-shadow: 0 2px 4px #2e2e3c;
-          margin: 100px 0;
+        text-shadow: 0 2px 4px #2e2e3c;
+        margin: 100px 0;
     }
 }
-.header { 
+
+.header {
     padding-bottom: 30px;
+}
+
+.first-screen {
+    position: relative;
+    padding: 90px 15px 100px;
+
+    &__header {
+        font: bold 72px/1.11 'Open Sans';
+        color: #1e252e;
+        margin: 0;
+    }
+
+    &__text,
+    &__link {
+        display: block;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    &__text {
+        color: #4f565f;
+        font-family: 'Open Sans';
+        margin: 90px 0 30px;
+    }
+}
+
+.description {
+    padding-bottom: 100px;
 }

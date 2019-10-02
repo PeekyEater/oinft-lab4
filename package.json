@@ -6,19 +6,23 @@
   "author": "Vladislav Goman",
   "license": "ISC",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production",
-    "watch": "webpack --mode development --watch"
+    "build": "webpack --config webpack.production.config.js",
+    "dev": "webpack-dev-server --config webpack.dev.config.js --open"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "autoprefixer": "^9.6.1",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^4.2.0",
+    "handlebars": "^4.4.0",
+    "handlebars-loader": "^1.7.1",
     "html-loader": "^0.5.5",
+    "html-minifier": "^4.0.0",
+    "html-minifier-loader": "^1.4.1",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.8.0",
