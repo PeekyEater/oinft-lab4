@@ -55,7 +55,7 @@ module.exports = {
                     {
                         loader: 'html-minifier-loader',
                         options: {
-                            removeComments: false,
+                            removeComments: true,
                             collapseWhitespace: true,
                             conservativeCollapse: true,
                             preserveLineBreaks: true
